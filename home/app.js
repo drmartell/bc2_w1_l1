@@ -26,7 +26,6 @@ const renderFiltered = () => {
         filtered = images.filter(image => (keywordFilter ? image.keyword === keywordFilter : true) &&
             (hornsFilter > 0 ? image.horns >= hornsFilter : true));
     }
-    console.log(filtered);
     filtered.forEach(image => renderCard(image));
 };
 
