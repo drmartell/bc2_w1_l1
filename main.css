@@ -15,6 +15,13 @@ h1 {
     justify-self: center;
 }
 
+#options {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 #logo {
     grid-column-start: 2;
     width: 100px;
@@ -22,15 +29,8 @@ h1 {
 }
 
 #keyword {
-    display: block;
     grid-column-start: 3;
     justify-self: center;
-}
-
-#horns {
-    grid-column-start: 3;
-    justify-self: flex-end;
-    align-self: baseline;
 }
 
 ul {
@@ -47,8 +47,6 @@ li {
 .image-div {
     width: 200px;
 }
-
-
 
 .card-img {
     width: 100%;
