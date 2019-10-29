@@ -13,9 +13,9 @@ const renderCard = (imageObj) => {
 };
 
 const renderFiltered = () => {
-    const keywordFilter = keywordFilterSelect.value;
-    const hornsFilter = hornsFilterSelect.value;
-    console.log(keywordFilter);
+    parentUl.innerHTML = '';
+    const keywordFilter = keywordFilterSelect.value.toLowerCase();
+    const hornsFilter = Number(hornsFilterSelect.value);
 
     let filtered = null;
 
@@ -23,14 +23,10 @@ const renderFiltered = () => {
         filtered = images;
     }
     else {
-        filtered = images.filter(image => {
-            // console.log(image);
-            image.keyword === keywordFilter &&
-            image.horns === hornsFilter;
-        });
-        console.log(filtered);
+        filtered = images.filter(image => (keywordFilter ? image.keyword === keywordFilter : true) &&
+            (hornsFilter > 0 ? image.horns >= hornsFilter : true));
     }
-
+    console.log(filtered);
     filtered.forEach(image => renderCard(image));
 };
 
