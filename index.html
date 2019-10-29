@@ -7,8 +7,63 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-    
-    <script src="home/app.js" type="module"></script>
+    <header>
+        <h1>Photo Gallery</h1>
+        <img id="logo" src="./assets/gallery-logo.png" alt="Welcome to the Photo Gallery">
+        <section id="options">
+            <select id="keyword">
+                <option value="" selected>All Types</option>
+                <option value="Rhino">rhino</option>
+                <option value="Unicorn">unicorn</option>
+                <option value="Unilego">unilego</option>
+                <option value="Triceratops">triceratops</option>
+            </select>
+            <select id="horns">
+                <option value="" selected>N/A</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </section>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <ul>
+                <li>
+                    <div class="image-div">
+                        <img class="card-img" src="https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003" alt="Felix image">
+                    </div>
+                    <div class="info-div">
+                        <h2 title="The description of the horned thing">A Horned Thing</h2>
+                        <p class="horns-p">3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image-div">
+                        <img class="card-img" src="https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003" alt="Felix image">
+                    </div>
+                    <div class="info-div">
+                        <h2>Felix</h2>
+                        <p class="horns-p">3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image-div">
+                        <img class="card-img" src="https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003" alt="Felix image">
+                    </div>
+                    <div class="info-div">
+                        <h2>Felix</h2>
+                        <p class="horns-p">3</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        Lab by 'Canadian Casey' @<a href="https://www.alchemycodelab.com/">alchemycodelab</a>
+    </footer>
+    <script src="./home/app.js" type="module"></script>
 </body>
 </html>
